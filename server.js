@@ -1,22 +1,23 @@
-import express from "express";
-import bodyParser from "body-parser";
-import dotenv from "dotenv";
-import morgan from "morgan";
-import path from "path";
-import { fileURLToPath } from "url";
-import usersRoutes from "./server/routes/router.js";
-import connectDB from "./server/database/connection.js";
+// import express from "express";
+// import bodyParser from "body-parser";
+// import dotenv from "dotenv";
+// import morgan from "morgan";
+// import path from "path";
+// import { fileURLToPath } from "url";
+// import usersRoutes from "./server/routes/router.js";
+// import connectDB from "./server/database/connection.js";
 
-// const express = require("express");
-// const bodyparser = require("body-parser");
-// const dotenv = require("dotenv");
-// const morgan = require("morgan");
-// const path = require('path');
+const express = require("express");
+const bodyParser = require("body-parser");
+const dotenv = require("dotenv");
+const morgan = require("morgan");
+const path = require('path');
 
+const usersRoutes = require('./server/routes/router')
+const connectDB = require('./server/database/connection')
 const app = express();
 const PORT = 8080;
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+
 dotenv.config({ path: "config.env" });
 
 // mongodb connection
@@ -39,8 +40,8 @@ app.use("/js", express.static(path.resolve(__dirname, "assets/js")));
 
 // load routers
 app.use("/", usersRoutes);
-app.use("/cadastro", usersRoutes);
 app.use("/login", usersRoutes);
+app.use("/cadastro", usersRoutes);
 
 app.listen(PORT, () => {
   console.log("Server is running on http://localhost:${PORT}");

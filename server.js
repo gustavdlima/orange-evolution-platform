@@ -5,6 +5,7 @@ import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from "url";
 import usersRoutes from "./server/routes/router.js";
+import connectDB from "./server/database/connection.js";
 
 // const express = require("express");
 // const bodyparser = require("body-parser");
@@ -17,6 +18,10 @@ const PORT = 8080;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 dotenv.config({ path: "config.env" });
+
+// mongodb connection
+
+connectDB();
 
 // log request
 app.use(morgan("tiny"));

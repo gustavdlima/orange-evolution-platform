@@ -20,7 +20,6 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: "config.env" });
 
 // mongodb connection
-
 connectDB();
 
 // log request

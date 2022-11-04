@@ -1,11 +1,19 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const morgan = require("morgan");
-const bodyparser = require("body-parser");
-const path = require('path');
+import express from 'express';
+import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
+import morgan from 'morgan';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// const express = require("express");
+// const bodyparser = require("body-parser");
+// const dotenv = require("dotenv");
+// const morgan = require("morgan");
+// const path = require('path');
 
 const app = express();
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 dotenv.config({ path: "config.env" });
 const PORT = 8080
 
@@ -13,7 +21,7 @@ const PORT = 8080
 app.use(morgan("tiny"));
 
 //parse request to body-parser
-app.use(bodyparser.urlencoded({extended:true}))
+app.use(bodyParser.json())
 
 // set view engine
 app.set("view engine", "ejs")
@@ -33,5 +41,5 @@ app.get("/login", (req, res) => {
   });
 
 app.listen(PORT, () => {
-  console.log("Server is running on http://localhost:$(PORT)");
+  console.log("Server is running on http://localhost:${PORT}");
 });

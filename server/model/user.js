@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const validator = require("validator");
-const Schema = mongoose.Schema;
+const schema = mongoose.Schema;
 
 // Defining the schema
-var userSchema = new Schema(
+var userSchema = new schema(
   {
     name: {
       type: String,
@@ -63,5 +63,21 @@ userSchema.pre("save", function (next) {
     return next();
   }
 });
+
+userSchema.statics.findByCredentials = async (email, password) => {
+  const user = await User.findOne({ email });
+
+  if (!user.email) {
+    throw new Error("incorrect email or password");
+  }
+
+  const isValid = await bcrypt.compare(password, user.password);
+
+  if (!isValid) {
+    throw new Error("incorrect email or password");
+  }
+
+  return user;
+};
 
 module.exports = User = mongoose.model("User", userSchema);

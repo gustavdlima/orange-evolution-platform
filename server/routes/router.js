@@ -23,7 +23,16 @@ router.post("/cadastro", async (req, res) => {
   } catch (err) {
     res.status(400).send(err);
   }
-  console.log(req.body);
+  // console.log(req.body);
+});
+
+router.post("/login", async (req, res) => {
+  try {
+   const  user = await User.findByCredentials(req.body.email, req.body.password)
+    res.send(user);
+  } catch (err) {
+    res.status(400).send(err.message);
+  }
 });
 
 module.exports = router;

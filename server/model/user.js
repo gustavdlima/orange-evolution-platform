@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const validator = require("validator")
+const validator = require("validator");
 const Schema = mongoose.Schema;
 
 // Defining the schema
@@ -41,4 +41,4 @@ var userSchema = new Schema(
 
 // var User = mongoose.model("User", userSchema);
 // const someModel = mongoose.model("User", userSchema);
-module.exports = User = mongoose.model('User', userSchema);
+module.exports = User = mongoose.model("User", userSchema);

@@ -11,10 +11,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
-const path = require('path');
-
-const usersRoutes = require('./server/routes/router')
-const connectDB = require('./server/database/connection')
+const path = require("path");
+const usersRoutes = require("./server/routes/router");
+const connectDB = require("./server/database/connection");
 const app = express();
 const PORT = 8080;
 

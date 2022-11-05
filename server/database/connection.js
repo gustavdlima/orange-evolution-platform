@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-
 const connectDB = async () => {
   try {
     //mongodb connection string
@@ -16,5 +15,4 @@ const connectDB = async () => {
   }
 };
 
-module.exports = connectDB
-
+module.exports = connectDB;

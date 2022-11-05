@@ -23,7 +23,7 @@ router.post("/cadastro", async (req, res) => {
   } catch (err) {
     res.status(400).send(err);
   }
-  console.log(user);
+  console.log(req.body);
 });
 
 module.exports = router;

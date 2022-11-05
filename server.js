@@ -14,11 +14,11 @@ const morgan = require("morgan");
 const path = require("path");
 const usersRoutes = require("./server/routes/router");
 const connectDB = require("./server/database/connection");
+
 const app = express();
 const PORT = 8080;
 
 dotenv.config({ path: "config.env" });
-
 // mongodb connection
 connectDB();
 

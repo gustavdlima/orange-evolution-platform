@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './main.css'
 
-import Login from './loginPage/Login'
+import Login from './modules/loginPage/Login'
+import SignupPage from './modules/signupPage/SignupPage'
 // import {
 //   createBrowserRouter,
 //   RouterProvider,
@@ -10,11 +11,9 @@ import Login from './loginPage/Login'
 
 // } from "react-router-dom"
 
-
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-
-    <Login />
+    {/* <Login /> */}
+    <SignupPage />
   </React.StrictMode>
 )

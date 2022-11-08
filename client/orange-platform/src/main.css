@@ -1,6 +1,6 @@
 html {
 	box-sizing: border-box;
-	background-color: rosybrown;
+	/* background-color: rosybrown; */
 }
 *,
 *:before,
@@ -10,5 +10,5 @@ html {
 
 body {
 	margin: 0;
-	background-color: rosybrown;
+	/* background-color: rosybrown; */
 }

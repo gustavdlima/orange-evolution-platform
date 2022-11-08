@@ -3,27 +3,43 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	min-height: 100vh;       /* altura visivel */
-	padding: 0 2rem;		/* tamanho baseado na fonte */
+	min-height: 100vh;
+	padding: 0 2rem;
+	background: rgb(255,205,0);
+	background: linear-gradient(0deg, rgba(255,205,0,1) 0%, rgba(255,90,35,1) 100%);
 }
 
 #login .form {
-	width: 100%;
-	background-color: #f1f1f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 22rem;
+	height: 29rem;;
 	max-width: 480px;
-	padding: 0.5rem;
+	background-color: rgb(31, 31, 31);
+}
+
+#login h1 {
+	color: #c5c5c5;
 }
 
 #login .field {
+	width: 80%;
 	padding-bottom: 0.5rem;
 }
 
 #login .field label {
-	display: block;
+	margin: 0.5rem 0.5rem 0.5rem 0.2rem;
+	color: #ffffff;
+	font-size: 1.3rem;
 }
 
 #login .field input {
 	width: 100%;
+	height: 60%;
+	border: 1px solid #c5c5c5;
+	border-radius: 12px;
 }
 
 #login .actions {
@@ -33,3 +49,16 @@
 	margin-top: 0.5rem;
 }
 
+#signup .actions button {
+	width: 10rem;
+	height: 4rem;
+	background-color:#ff5a23;
+	color: #ffffff;
+	border:none;
+	border-radius:10px;
+}
+
+#login .form img {
+	width: 15vh;
+	height: 14vh
+}

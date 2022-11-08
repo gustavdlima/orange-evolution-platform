@@ -19,10 +19,11 @@ const Login = () => {
 
   return (
 	<div id="login">
-		<h1 className="title">Login</h1>
 		<form className="form" onSubmit={handleSubmit}>
+			<img src="./src/assets/logo-branca.png" alt="" />
+			{/* <h1 className="title">Login</h1> */}
 			<div className="field">
-				<label htmlFor="email">Email</label>
+				<label htmlFor="email">Email*</label>
 				<input
 				type="email"
 				name="email"
@@ -32,7 +33,7 @@ const Login = () => {
 				/>
 			</div>
 			<div className="field">
-				<label htmlFor="password">Senha</label>
+				<label htmlFor="password">Senha*</label>
 				<input
 				type="password"
 				name="password"

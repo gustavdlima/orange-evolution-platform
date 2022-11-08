@@ -21,8 +21,26 @@ db.connect(function(err) {
 });
 
 app.post('/login', async (req, res) => {
+	const	email = req.body.email;
+	const	password = req.body.password;
+
+	db.query("SELECT * FROM users WHERE email = ? AND password = ?",
+	 [email, password],
+	  (err,result) => {
+		if (result.lenght > 0) {
+			res.send({msg: "Usuário logado com sucesso"})
+		} else {
+			res.send({msg: "Conta não encontrada"})
+		}
+	  })
+
 	console.log(req.body);
 });
+
+app.post('/cadastro', async (req, res) => {
+	console.log(req.body);
+});
+
 
 app. listen(port, () => {
 	console.log("Server online on port ${port}")

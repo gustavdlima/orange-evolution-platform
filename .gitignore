@@ -9,7 +9,7 @@
 /client/orange-platform/pnpm-debug.log*
 /client/orange-platform/lerna-debug.log*
 
-/client/orange-platform/node_modules
+node_modules
 dist
 dist-ssr
 *.local

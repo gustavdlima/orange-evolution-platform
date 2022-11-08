@@ -7,11 +7,11 @@ const Login = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
-	const handleSubmit = (e) => {
+	const handleSubmit = (values) => {
 		e.preventDefault();
 		Axios.post("https://localhost:3000/login", {
-			email: e.email,
-			password: e.password,
+			email: values.email,
+			password: values.password,
 		}).then((response) => {
 			console.log(response);
 		});
@@ -28,7 +28,7 @@ const Login = () => {
 				name="email"
 				id="email"
 				value={email}
-				onChange={(e) => setEmail(e.target.value)}
+				onChange={(value) => setEmail(value.target.value)}
 				/>
 			</div>
 			<div className="field">
@@ -38,7 +38,7 @@ const Login = () => {
 				name="password"
 				id="password"
 				value={password}
-				onChange={(e) => setPassword(e.target.value)}
+				onChange={(value) => setPassword(value.target.value)}
 				/>
 			</div>
 			<div className="actions">

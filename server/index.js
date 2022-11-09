@@ -45,7 +45,7 @@ app.post("/login", (req, res) => {
 
 });
 
-app.post("/cadastro", (req, res) => {
+app.post("/", (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
   const password = req.body.password;

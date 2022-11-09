@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react"
 import "./style.css";
 import	Axios from "axios"
+import { useNavigate } from "react-router-dom"
 
 const SignupPage = () => {
     const [name, setName] = useState("");
@@ -19,6 +20,12 @@ const SignupPage = () => {
         });
         console.log(name, email, password);
     };
+
+    const navigate = useNavigate();
+    const routeChange = () => {
+        let path = '/login'
+        navigate(path);
+    }
 
     return (
         <div id="signup">
@@ -58,7 +65,7 @@ const SignupPage = () => {
                     />
                 </div>
                 <div className="actions">
-                    <button type="submit" className="button">
+                    <button type="submit" className="button" onClick={routeChange}>
                         Login
                     </button>
                     <button type="submit" className="button">

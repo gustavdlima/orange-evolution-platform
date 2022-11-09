@@ -14,7 +14,7 @@ import SignupPage from './modules/signupPage/SignupPage'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <Login /> */}
+    <Login />
     <SignupPage />
   </React.StrictMode>
 )

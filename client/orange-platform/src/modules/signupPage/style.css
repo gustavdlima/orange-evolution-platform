@@ -4,9 +4,9 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	padding: 0 2rem;
-	background: rgb(255,205,0);
-	background: linear-gradient(0deg, rgba(255,205,0,1) 0%, rgba(255,90,35,1) 100%);
+	background: rgb(255,90,35,1);
+	/* background: linear-gradient(0deg, rgba(255,205,0,1) 0%, rgba(255,90,35,1) 100%); */
+	/* background-image: url("../../assets/background-orange-robotic.png"); */
 }
 
 #signup .form {
@@ -17,14 +17,7 @@
 	width: 30rem;
 	height: 37.5rem;
 	max-width: 480px;
-	padding: 0.5rem;
 	background-color: rgb(31, 31, 31);
-}
-
-input::-moz-placeholder {
-    color:rgb(117, 117, 117);
-	font-size: 10px;
-    font-style: bold;
 }
 
 #signup .field {
@@ -33,25 +26,16 @@ input::-moz-placeholder {
 }
 
 #signup .field label {
-	display: block;
-	margin: 0.5rem 0.5rem 0.5rem 0.2rem;
+	padding: 0px;;
 	color: #ffffff;
 	font-size:0.8rem;
 }
 
 #signup .field input {
 	width: 100%;
+	height: 65%;
 	border: 1px solid #c5c5c5;
-	border-radius: 12px;
-}
-
-#signup .actions {
-	width: 80%;
-	display: flex;
-	justify-content: center;
-	gap: 3rem;
-	align-items: center;
-	margin-top: 3rem;
+	padding: 1rem;
 }
 
 #signup .form img {
@@ -59,13 +43,25 @@ input::-moz-placeholder {
 	height: 14vh
 }
 
+#signup .actions {
+	display: flex;
+	gap: 3rem;
+	margin-top: 2rem;
+}
+
+
 #signup .actions button {
-	width: 7rem;
-	height: 2rem;
+	width:5rem;
+	height: 3rem;
 	background-color:#ff5a23;
 	color: #ffffff;
 	border:none;
-	border-radius:10px;
+}
+
+input::-moz-placeholder {
+	color:rgb(117, 117, 117);
+	font-size: 1rem;
+	font-style: bold;
 }
 
 #signup .actions button:hover {
@@ -75,9 +71,7 @@ input::-moz-placeholder {
 }
 
 .form-side-img {
-	width: 44rem;
 	height: 37.5rem;
 	max-height: 600px;
 	max-width: 704px;
-	padding: 0 0 0 0.2rem;
 }

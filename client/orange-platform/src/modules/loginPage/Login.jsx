@@ -8,10 +8,10 @@ const Login = () => {
 	const [password, setPassword] = useState("");
 
 	const handleSubmit = (values) => {
-		e.preventDefault();
-		Axios.post("https://localhost:3000/login", {
-			email: values.email,
-			password: values.password,
+		values.preventDefault();
+		Axios.post("http://localhost:3000/login", {
+			email: email,
+			password: password,
 		}).then((response) => {
 			console.log(response);
 		});
@@ -23,21 +23,23 @@ const Login = () => {
 			<img src="./src/assets/logo-branca.png" alt="" />
 			{/* <h1 className="title">Login</h1> */}
 			<div className="field">
-				<label htmlFor="email">Email*</label>
+				<label htmlFor="email">Email</label>
 				<input
 				type="email"
 				name="email"
 				id="email"
+				placeholder="Ex: fcamara@mail.com"
 				value={email}
 				onChange={(value) => setEmail(value.target.value)}
 				/>
 			</div>
 			<div className="field">
-				<label htmlFor="password">Senha*</label>
+				<label htmlFor="password">Senha</label>
 				<input
 				type="password"
 				name="password"
 				id="password"
+				placeholder="Ex: **********"
 				value={password}
 				onChange={(value) => setPassword(value.target.value)}
 				/>

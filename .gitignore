@@ -1,2 +1,26 @@
 /backend/node_modules/
 
+# Logs
+/client/orange-platform/logs
+/client/orange-platform/*.log
+/client/orange-platform/npm-debug.log*
+/client/orange-platform/yarn-debug.log*
+/client/orange-platform/yarn-error.log*
+/client/orange-platform/pnpm-debug.log*
+/client/orange-platform/lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

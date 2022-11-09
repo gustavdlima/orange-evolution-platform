@@ -7,11 +7,11 @@ const Login = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		Axios.post("https://localhost:3000/login", {
-			email: e.email,
-			password: e.password,
+	const handleSubmit = (values) => {
+		values.preventDefault();
+		Axios.post("http://localhost:3000/login", {
+			email: email,
+			password: password,
 		}).then((response) => {
 			console.log(response);
 		});
@@ -19,16 +19,18 @@ const Login = () => {
 
   return (
 	<div id="login">
-		<h1 className="title">Login</h1>
 		<form className="form" onSubmit={handleSubmit}>
+			<img src="./src/assets/logo-branca.png" alt="" />
+			{/* <h1 className="title">Login</h1> */}
 			<div className="field">
 				<label htmlFor="email">Email</label>
 				<input
 				type="email"
 				name="email"
 				id="email"
+				placeholder="Ex: fcamara@mail.com"
 				value={email}
-				onChange={(e) => setEmail(e.target.value)}
+				onChange={(value) => setEmail(value.target.value)}
 				/>
 			</div>
 			<div className="field">
@@ -37,8 +39,9 @@ const Login = () => {
 				type="password"
 				name="password"
 				id="password"
+				placeholder="Ex: **********"
 				value={password}
-				onChange={(e) => setPassword(e.target.value)}
+				onChange={(value) => setPassword(value.target.value)}
 				/>
 			</div>
 			<div className="actions">

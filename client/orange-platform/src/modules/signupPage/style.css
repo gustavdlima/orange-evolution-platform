@@ -4,7 +4,7 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: rgb(255,90,35,1);
+	background: black
 	/* background: linear-gradient(0deg, rgba(255,205,0,1) 0%, rgba(255,90,35,1) 100%); */
 	/* background-image: url("../../assets/background-orange-robotic.png"); */
 }
@@ -74,4 +74,5 @@ input::-moz-placeholder {
 	height: 37.5rem;
 	max-height: 600px;
 	max-width: 704px;
+	background-color: black;
 }

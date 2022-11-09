@@ -68,7 +68,7 @@ const SignupPage = () => {
             </form>
             <img
                 className="form-side-img"
-                src="./src/assets/151516.png"
+                src="./src/assets/final-img-carousel.png"
                 alt=""
             />
         </div>

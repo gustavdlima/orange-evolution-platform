@@ -4,22 +4,23 @@ const mysql = require("mysql");
 const app = express();
 const port = 3000;
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
   host: "sql.freedb.tech",
   user: "freedb_gstvmrtns",
   password: "#*$CfuZ4g9qD8Un",
   database: "freedb_USER_SCHEMA",
+  port: 3306,
 });
 
 app.use(express.json());
 app.use(cors());
 
-db.connect(function (err) {
+db.getConnection(function (err) {
   if (err) console.log(err);
   console.log("Connected!");
 });
 
-app.post("/login", async (req, res) => {
+app.post("/login", (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
@@ -34,11 +35,13 @@ app.post("/login", async (req, res) => {
       }
     }
   );
-
-  console.log(req.body);
 });
 
-app.post("/cadastro", async (req, res) => {
+app.post("/cadastro", (req, res) => {
+  const name = req.body.name;
+  const email = req.body.email;
+  const password = req.body.password;
+
   console.log(req.body);
 });
 

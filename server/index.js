@@ -1,14 +1,15 @@
 const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql");
+const { response } = require("express");
 const app = express();
 const port = 3000;
 
 const db = mysql.createPool({
-  host: "sql.freedb.tech",
-  user: "freedb_gstvmrtns",
-  password: "#*$CfuZ4g9qD8Un",
-  database: "freedb_USER_SCHEMA",
+  host: "sql10.freemysqlhosting.net",
+  user: "sql10555900",
+  password: "3K7lJvPTep",
+  database: "sql10555900",
   port: 3306,
 });
 
@@ -28,13 +29,20 @@ app.post("/login", (req, res) => {
     "SELECT * FROM users WHERE email = ? AND password = ?",
     [email, password],
     (err, result) => {
-      if (result.lenght > 0) {
+      if (err) {
+        res.send(err);
+      }
+      console.log(result);
+      console.log(result.length);
+      if (result.length > 0) {
         res.send({ msg: "Usuário logado com sucesso" });
       } else {
         res.send({ msg: "Conta não encontrada" });
       }
     }
   );
+  // console.log(req.body);
+
 });
 
 app.post("/cadastro", (req, res) => {
@@ -42,6 +50,14 @@ app.post("/cadastro", (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
+  db.query(
+    "INSERT INTO users (name, email, password) VALUES (?, ?, ?)",
+    [name, email, password],
+    (err, result) => {
+      if (err) res.send(err);
+      res.send({ msg: "Cadastrado com sucesso" });
+    }
+  );
   console.log(req.body);
 });
 

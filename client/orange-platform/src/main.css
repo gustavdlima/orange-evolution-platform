@@ -5,10 +5,7 @@ html {
 *,
 *:before,
 *:after {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: 500;
-	font-stretch: 100%;
+
 	box-sizing: inherit;
 }
 

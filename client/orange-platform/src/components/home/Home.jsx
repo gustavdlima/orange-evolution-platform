@@ -1,20 +1,14 @@
 import React from 'react'
 import './style.css'
 import Navbar from '../navbar/Navbar'
+import Trilhas from '../trilhas/Trilhas'
 
 const Home = () => {
 	return (
 		<div className="home">
-			<Navbar>
+			<Navbar />
 
-			</Navbar>
-
-			<body>
-				<div className="trail-img"></div>
-				<div className="trail-img"></div>
-				<div className="trail-img"></div>
-			</body>
-
+			<Trilhas />
 
 		</div>
 	  )

@@ -17,7 +17,7 @@ const Navbar = () => {
                 <div className="col-img">
                     <img
                         className="site-logo"
-                        src="./src/assets/logo-branca.png"
+                        src="./src/assets/multicolored_logo.png"
                         alt="orange juice"
                         href="/"
                     />

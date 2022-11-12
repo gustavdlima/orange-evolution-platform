@@ -1,0 +1,103 @@
+.trails {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 70vh;
+	flex-grow: 1;
+}
+
+.trails li, a, button {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 00;
+	font-stretch: 100%;
+}
+
+.trails .row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	border: 1px solid rgb(2, 2, 2);
+	margin: 1em;
+}
+
+.trails .col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgb(100, 3, 130);
+	margin: 1em;
+}
+
+.trails .col a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: inherit;
+	text-decoration: none;
+}
+
+.trails ul {
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 2048px) {
+	.trails .row {
+		width: 100%;
+		min-height: 50vh;
+	}
+
+	.trails .col {
+		/* width: 100%; */
+		margin: 4em;
+		min-height: 30vh;
+		padding: 4em;
+	}
+
+	.trails .col a {
+		margin: 1em;
+		font-size: 1.2em;
+	}
+}
+
+@media only screen and (min-width: 836px) and (max-width: 1024px) {
+	.trails .row {
+		min-height: 50vh;
+	}
+
+	.trails .col {
+		min-height: 30vh;
+		padding: 4em;
+	}
+
+	.trails .col a {
+		font-size: 1.3em;
+	}
+
+	.trails ul {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 835px) {
+	.trails .row {
+		min-height: 100vh;
+	}
+
+	.trails .col {
+		min-height: 30vh;
+	}
+
+	.trails .col a {
+		font-size: 1.3em;
+	}
+
+	.trails ul {
+		flex-direction: column;
+	}
+}

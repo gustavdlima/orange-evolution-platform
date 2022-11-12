@@ -2,15 +2,20 @@
 	min-width: 100%;
 	display: flex;
 	padding: 1rem 1rem;
-	color: aliceblue;
-	background: rgb(56, 56, 56);
+	color: rgb(0, 0, 0);
+	border: 1px solid black;
 }
 
-li, a, button {
+.nav li, a, button {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: 500;
 	font-stretch: 100%;
+}
+
+.nav img {
+	width: 250px;
+	height: 100px;
 }
 
 .nav .site-logo {
@@ -27,13 +32,13 @@ li, a, button {
 	flex-grow: 1;
 }
 
-.col {
+.nav .col {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.col-img {
+.nav .col-img {
 	display: flex;
 	align-items: center;
 }
@@ -55,7 +60,7 @@ li, a, button {
 }
 
 .nav .col-6 li:hover {
-	background-color: rgb(88, 88, 88);
+	background-color: rgb(213, 213, 213);
 }
 
 .nav .col-6 a {
@@ -64,7 +69,7 @@ li, a, button {
 	text-decoration: none;
 }
 
-.button {
+.nav .button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -74,34 +79,29 @@ li, a, button {
 	font-size: 1rem;
 	border:none;
 	font-size: 1em;
+	cursor: pointer;
 }
 
 
 @media only screen and (min-width: 1025px) and (max-width: 2048px) {
 
-	a{
+	.nav a{
 		font-size: 1.3em;
 	}
 
-	.button {
+	.nav .button {
 		margin: 1.5em;
-		/* padding: 0.5em; */
 		font-size: 1em;
 	}
 }
 
-
 @media only screen and (min-width: 561px) and (max-width: 1024px) {
 
-	.nav .col {
-		/* flex-direction: column; */
-	}
-
-	a{
+	.nav a{
 		font-size: 1.4em;
 	}
 
-	.button {
+	.nav .button {
 		margin: 1em;
 	}
 }
@@ -132,11 +132,11 @@ li, a, button {
 		flex-direction: column;
 	}
 
-	a{
+	.nav a{
 		font-size: 1.5em;
 	}
 
-	button {
+	.nav button {
 		margin: 0.5em;
 	}
 }

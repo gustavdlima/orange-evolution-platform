@@ -1,7 +1,7 @@
 import React from 'react'
-import Subtopic from '../subtopicos/Subtopic'
-import QaJson from "../subtopicos/qa-subtopics.json"
-import Navbar from '../navbar/Navbar'
+import Subtopic from '../../subtopicos/Subtopic'
+import QaJson from "../../subtopicos/qa-subtopics.json"
+import Navbar from '../../navbar/Navbar'
 
 
 const Qa = ({ area }) => {

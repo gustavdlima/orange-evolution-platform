@@ -1,7 +1,7 @@
 import React from 'react'
-import Subtopic from '../subtopicos/Subtopic'
-import FullstackJson from "../subtopicos/fullstack-subtopics.json"
-import Navbar from '../navbar/Navbar'
+import Subtopic from '../../subtopicos/Subtopic'
+import FullstackJson from "../../subtopicos/fullstack-subtopics.json"
+import Navbar from '../../navbar/Navbar'
 
 
 const Fullstack = ({ area }) => {

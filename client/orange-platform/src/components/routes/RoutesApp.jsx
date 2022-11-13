@@ -4,9 +4,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "../loginPage/Login";
 import SignupPage from "../trilhas/SignupPage";
 import Home from "../home/Home";
-import Fullstack from "../topico-trilhas/Fullstack";
-import Ux from "../topico-trilhas/Ux";
-import Qa from "../topico-trilhas/Qa";
+import Fullstack from "../topico-trilhas/fullstack/Fullstack";
+import Ux from "../topico-trilhas/ux/Ux";
+import Qa from "../topico-trilhas/qa/Qa";
 
 
 const Private = ({ Item }) => {

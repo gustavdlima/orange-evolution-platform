@@ -15,23 +15,24 @@ const Navbar = () => {
         <nav className="nav">
             <div className="row">
                 <div className="col-img">
-                    <img
-                        className="site-logo"
-                        src="./src/assets/multicolored_logo.png"
-                        alt="orange juice"
-                        href="/"
-                    />
+                    <a href="/">
+                        <img
+                            className="site-logo"
+                            src="./src/assets/multicolored_logo.png"
+                            alt="orange juice"
+                        />
+                    </a>
                 </div>
                 <div className="col-6">
                     <ul className="list">
                         <li>
-                            <a href="">Home</a>
+                            <a href="/home">Home</a>
                         </li>
                         <li>
-                            <a href="">Trilhas</a>
+                            <a href="/trilhas">Trilhas</a>
                         </li>
                         <li>
-                            <a href="">Conteúdo</a>
+                            <a href="/conteudo">Conteúdo</a>
                         </li>
                     </ul>
                 </div>

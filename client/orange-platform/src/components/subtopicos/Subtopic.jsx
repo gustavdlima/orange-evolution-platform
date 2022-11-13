@@ -17,7 +17,7 @@ const Subtopic = ({ title, data }) => {
 				{data.map((d, i) => {
 					return (
 						<li className="item" key={i} onClick={() => {
-							navigate(`${d.src}`)
+							location.href=d.src
 						}}>{d.description}</li>
 					)
 				})}

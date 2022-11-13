@@ -1,7 +1,7 @@
 import React from 'react'
-import Subtopic from '../subtopicos/Subtopic'
-import UxJson from "../subtopicos/ux-subtopics.json"
-import Navbar from '../navbar/Navbar'
+import Subtopic from '../../subtopicos/Subtopic'
+import UxJson from "../../subtopicos/ux-subtopics.json"
+import Navbar from '../../navbar/Navbar'
 
 
 const Ux = ({ area }) => {

@@ -1,17 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css'
 import { useNavigate } from "react-router-dom"
 
-
-
 const Trilhas = () => {
 	const navigate = useNavigate();
-
-	const handleClick = event => {
-		console.log(event.target);
-
-		console.log('image clicked');
-	};
+	// const
 
 	return (
 
@@ -20,17 +13,17 @@ const Trilhas = () => {
 				<ul>
 					<div className='col'>
 						<li>
-							<a>Fullstack Dev</a>
+							<a href='/fullstack'>Fullstack Dev</a>
 						</li>
 					</div>
 					<div className='col'>
 						<li>
-							<a><p>UX/UI Designer</p></a>
+							<a href='/ux'><p>UX/UI Designer</p></a>
 						</li>
 					</div>
 					<div className='col'>
 						<li>
-							<a>Quality Assurance (QA)</a>
+							<a href='/qa' >Quality Assurance (QA)</a>
 						</li>
 					</div>
 				</ul>

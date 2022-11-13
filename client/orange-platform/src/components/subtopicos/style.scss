@@ -1,0 +1,35 @@
+.Box{
+    width: 100%;
+    height: 3rem;
+    background: #835afd;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+
+    border-bottom: 1px solid #9d7ff8;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.subitems{
+    display: flex;
+    flex-direction: column;
+    background: #835afd71;
+
+    ul {
+
+    list-style-type:none;
+    }
+
+    .item{
+        text-decoration: none;
+        padding: 0.856rem;
+        &:hover{
+
+            background: #835afd71;
+            cursor: pointer;
+        }
+    }
+}

@@ -3,7 +3,6 @@
 	display: flex;
 	padding: 1rem 1rem;
 	color: rgb(0, 0, 0);
-	border: 1px solid black;
 }
 
 .nav li, a, button {

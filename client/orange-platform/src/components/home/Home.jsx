@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css'
 import Navbar from '../navbar/Navbar'
 import Trilhas from '../trilhas/Trilhas'
+import Subtopicos from '../subtopicos/Subtopic'
 
 const Home = () => {
 	return (
@@ -9,6 +10,7 @@ const Home = () => {
 			<Navbar />
 
 			<Trilhas />
+			{/* <Subtopicos /> */}
 
 		</div>
 	  )

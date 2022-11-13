@@ -1,0 +1,50 @@
+{
+	"inicio": [
+		{
+			"src":"https://medium.com/orangejuicefc/de-advogada-a-desenvolvedora-um-relato-sobre-minha-migra%C3%A7%C3%A3o-de-carreira-e-dicas-para-quem-pretende-45ad5df833b5",
+			"description": "Migração de Carreira"
+		},
+		{
+			"src":"https://resources.scrumalliance.org/Article/day-life-scrum-master",
+			"description":"Scrum Master"
+		},
+		{
+			"src":"https://medium.com/orangejuicefc/qual-o-papel-do-qa-em-uma-equipe-8e8147be28dd",
+			"description":"QA"
+		}
+	],
+
+	"conceitos": [
+		{
+			"src":"https://www.youtube.com/watch?v=voE1-yUY-Qg&feature=youtu.be",
+			"description":"Qualidade além dos bugs"
+		},
+		{
+			"src":"https://www.hipsters.tech/qualidade-e-software-no-itau-hipsters-131/",
+			"description":"Case Itaú"
+		},
+		{
+			"src":"https://www.treinaweb.com.br/curso/bdd-testes-guiados-por-comportamento-com-behat-php?gclid=CjwKCAjwx7GYBhB7EiwA0d8oexch12kNK-UuwN_c2mimb2k1_XPVZ4JI5dxp4JI0B06dOM4RSTa8ZRoCRHUQAvD_BwE",
+			"description":"BDD"
+		},
+		{
+			"src":"https://www.hipsters.tech/testes-automatizados-hipsters-51/",
+			"description":"Automação de Testes"
+		},
+		{
+			"src":"https://www.udemy.com/course/introducao-a-bancos-de-dados-e-linguagem-sql/",
+			"description":"Banco de Dados"
+		}
+	],
+
+	"opcional": [
+		{
+			"src":"https://testautomationu.applitools.com/",
+			"description":"Automação de Testes"
+		},
+		{
+			"src":"https://codejourney.com.br/o-papel-do-qa-em-um-ambiente-devops/",
+			"description":"Papel do QA"
+		}
+	]
+}

@@ -1,0 +1,73 @@
+{
+	"inicio": [
+		{
+			"src":"https://medium.com/orangejuicefc/design-thinking-e-carreira-como-migrei-de-psicologia-para-ux-design-cb79e8b47df5",
+			"description": "Migração de Carreira"
+		},
+		{
+			"src":"https://www.alura.com.br/artigos/ux-e-ui-conheca-as-semelhancas-e-diferencas-entre-ambos",
+			"description":"Ux Design"
+		},
+		{
+			"src":"https://www.youtube.com/watch?v=TmTupAe14T4&ab_channel=OrangeJuice",
+			"description":"Metodologia Ágil"
+		},
+		{
+			"src":"https://www.youtube.com/watch?v=KKLDwHyQATA&feature=youtu.be",
+			"description":"LGPD"
+		}
+	],
+
+	"fundamentosUx": [
+		{
+			"src":"https://www.youtube.com/watch?v=zaFEEvHZgjw&feature=youtu.be",
+			"description":"Design"
+		},
+		{
+			"src":"https://uxdesign.blog.br/don-norman-e-o-termo-ux-6dffb3f8d218",
+			"description":"UX Design"
+		},
+		{
+			"src":"https://www.alura.com.br/apostila-ux-usabilidade-mobile-web/pesquisa",
+			"description":"Ux Research"
+		},
+		{
+			"src":"https://ateliware.com/blog/user-flow",
+			"description":"Fluxo de usuários"
+		},
+		{
+			"src":"https://medium.com/aela/10-heur%C3%ADsticas-de-nielsen-dicas-para-melhorar-a-usabilidade-de-sua-interface-35ef86a7fb41",
+			"description":"Heurísticas de Nielsen"
+		}
+	],
+
+	"fundamentosUi": [
+		{
+			"src":"https://www.youtube.com/watch?v=bHDDbIsKVnI",
+			"description":"Ui Design"
+		},
+		{
+			"src":"https://brasil.uxdesign.cc/princ%C3%ADpios-da-gestalt-aplicados-no-design-de-intera%C3%A7%C3%A3o-7132e403d076",
+			"description":"Gestalt"
+		},
+		{
+			"src":"https://chiefofdesign.com.br/teoria-das-cores/",
+			"description":"Teoria das Cores"
+		}
+	],
+
+	"opcional": [
+		{
+			"src":"https://www.amazon.com.br/dp/857416836X/ref=cm_sw_r_tw_dp_4AHBKZPKDK9J290N0T28?_encoding=UTF8&psc=1",
+			"description":"Design para quem não é Designer"
+		},
+		{
+			"src":"https://acesse.cubos.academy/pt-br/minicursodesignux_ui",
+			"description":"Mini Cursos UX/UI Design"
+		},
+		{
+			"src":"https://www.eucapacito.com.br/curso-ec/design-grafico",
+			"description":"Curso Design Gráfico"
+		}
+	]
+}

@@ -1,0 +1,62 @@
+{
+	"inicio": [
+		{
+			"src":"https://medium.com/orangejuicefc/de-advogada-a-desenvolvedora-um-relato-sobre-minha-migra%C3%A7%C3%A3o-de-carreira-e-dicas-para-quem-pretende-45ad5df833b5",
+			"description": "Migração de carreira"
+		},
+		{
+			"src":"https://youtu.be/n0KH8dQSrv0",
+			"description":"Culture Code"
+		},
+		{
+			"src":"https://www.youtube.com/watch?v=_ku7bY5GtIY&ab_channel=GrupoFCamara",
+			"description":"Product Owner e Scrum Master"
+		},
+		{
+			"src":"https://www.alura.com.br/artigos/como-se-tornar-um-desenvolvedor-full-stack-no-proximo-ano",
+			"description":"Desenvolvimento"
+		},
+		{
+			"src":"https://medium.com/orangejuicefc/por-que-um-programador-deve-desconstruir-a-ideia-de-que-n%C3%A3o-precisa-lidar-com-pessoas-e-como-9974bcebf4a9",
+			"description":"Comunicação"
+		}
+	],
+
+	"conceitos": [
+		{
+			"src":"https://www.youtube.com/watch?v=qZ4ZKJSmf4k",
+			"description":"Qual a melhor linguagem de programação?"
+		},
+		{
+			"src":"https://www.udemy.com/course/logica-de-programacao-e-algoritmos-iniciante/",
+			"description":"Lógica de Programação de Algoritmo"
+		},
+		{
+			"src":"https://learn.microsoft.com/pt-br/windows/wsl/install",
+			"description":"Instalar o Linux no Windows com o WSL "
+		},
+		{
+			"src":"https://www.youtube.com/watch?v=9k_lIYuRtg8&ab_channel=OrangeJuice",
+			"description":"Versionamento com Git"
+		},
+		{
+			"src":"https://aws.amazon.com/pt/what-is/api/",
+			"description":"O que é uma API?"
+		}
+	],
+
+	"opcional": [
+		{
+			"src":"https://www.amazon.com.br/dp/8542215788/ref=cm_sw_r_tw_dp_CP0QF5VZAEJDP8T5PGGF?_encoding=UTF8&psc=1",
+			"description":"Arrume sua cama"
+		},
+		{
+			"src":"https://acesse.cubos.academy/minicurso-javascript?hsLang=pt",
+			"description":"Mini Curso Javascript do Zero"
+		},
+		{
+			"src":"",
+			"description":""
+		}
+	]
+}

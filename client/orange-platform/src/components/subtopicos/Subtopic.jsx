@@ -3,14 +3,14 @@ import YoutubeEmbed from "../modal/YoutubeEmbed";
 import Modal from "react-modal"
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 import "./style.scss";
-// Modal.setAppElement(document.getElementById('root'));
+Modal.setAppElement(document.getElementById('root'));
+var id = toString('');
 
 const Subtopic = ({ title, data }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [modalIsOpen, setModalIsOpen] = React.useState(false);
 
 	function openModal() {
-		console.log("open")
 		setModalIsOpen(true);
 	}
 
@@ -18,8 +18,20 @@ const Subtopic = ({ title, data }) => {
 		setModalIsOpen(false);
 	}
 
+	function saveId(temp) {
+		id = temp;
+	}
+
 	const takeVideoId = (src) => {
-		return "10_raCSnrqc";
+		if (src.slice(0, 23) == "https://www.youtube.com") {
+			const linkSplits = src.split('=')
+			const id = linkSplits[1].substr(0, 11)
+			return id;
+		} else{
+			const linkSplits = src.split('/')
+			const id = linkSplits[3];
+			return id;
+		}
 	};
 
 	return (
@@ -37,17 +49,18 @@ const Subtopic = ({ title, data }) => {
 				{isOpen ? (
 					<ul>
 						{data.map((d, i) => {
-							const videoId = takeVideoId(d.src);
 							return (
 								<li
 									className="item"
 									key={i}
 									onClick={() => {
+										const temp = takeVideoId(d.src.toString());
+										saveId(temp);
 										if (
-											d.src.slice(0, 23) !=
-											"https://www.youtube.com" &&
-											d.src.slice(0, 16) !=
-											"https://youtu.be"
+											(d.src.slice(0, 23) !=
+											"https://www.youtube.com") &&
+											(d.src.slice(0, 16) !=
+											"https://youtu.be")
 										)
 											location.href = d.src;
 									}}
@@ -55,14 +68,16 @@ const Subtopic = ({ title, data }) => {
 									<a onClick={openModal}>
 										{d.description}
 									</a>
-									{d.src.slice(0, 23) ==
-										"https://www.youtube.com" && (
+									{((d.src.slice(0, 23) ==
+										"https://www.youtube.com")
+										|| (d.src.slice(0, 16) ==
+											"https://youtu.be")) && (
 											<Modal
-											isOpen={modalIsOpen}
-											onRequestClose={closeModal}
-											contentLabel="Example Modal"
+												isOpen={modalIsOpen}
+												onRequestClose={closeModal}
+												contentLabel="Youtube Modal"
 											>
-											<YoutubeEmbed embedId={videoId} />
+												<YoutubeEmbed embedId={id} />
 											</Modal>
 										)}
 								</li>

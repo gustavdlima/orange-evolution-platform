@@ -10,7 +10,7 @@
 .trails li, a, button {
 	font-family: 'Open Sans';
 	font-style: normal;
-	font-weight: 00;
+	font-weight: 500;
 	font-stretch: 100%;
 }
 
@@ -19,7 +19,6 @@
 	justify-content: center;
 	align-items: center;
 	flex-grow: 1;
-	border: 1px solid rgb(2, 2, 2);
 	margin: 1em;
 	padding: 1em;
 }
@@ -28,9 +27,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid rgb(100, 3, 130);
+	background: rgb(184,0,255);
+	background: linear-gradient(0deg, rgba(184,0,255,1) 0%, rgba(108,35,255,1) 100%);
 	padding: 1em;
-	margin: 1em;
 }
 
 .trails .col a {
@@ -39,6 +38,8 @@
 	align-items: center;
 	color: inherit;
 	text-decoration: none;
+	cursor: pointer;
+
 }
 
 .trails ul {
@@ -47,18 +48,17 @@
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	color: aliceblue
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 2048px) {
 	.trails .row {
 		width: 100%;
-		min-height: 50vh;
 	}
 
 	.trails .col {
-		/* width: 100%; */
-		margin: 4em;
-		min-height: 30vh;
+		margin-bottom: 5em;
 		padding: 4em;
 	}
 
@@ -87,13 +87,21 @@
 	}
 }
 
-@media only screen and (max-width: 835px) {
+@media only screen and (max-width:768px) {
+	.trails {
+		padding: 0;
+	}
 	.trails .row {
+		justify-content: center;
+		align-items: center;
+		padding: 0;
 		min-height: 100vh;
 	}
 
 	.trails .col {
-		min-height: 30vh;
+		margin-left: 0;
+		margin-bottom: 2rem;
+		min-height: 2vh;
 	}
 
 	.trails .col a {

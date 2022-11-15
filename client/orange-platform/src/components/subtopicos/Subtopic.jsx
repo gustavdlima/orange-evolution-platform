@@ -37,7 +37,7 @@ const Subtopic = ({ title, data }) => {
 
 	return (
 		<>
-			<div className="Box">
+			<div className="box">
 				<h3
 					onClick={() =>
 						setIsOpen((v) => !v) && setVideoIsOpen((v) => !v)

@@ -23,10 +23,14 @@ Dentro do repositório (client e server), instale as dependências necessárias:
 Para ligar os servidores, basta usar os comandos:
 
 Dentro da ./server
+
     $ npm start
 
+
 Dentro do ./client/orange-platform
+
     $ npm run dev
+
 
 ## Usando a plataforma
 

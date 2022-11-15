@@ -1,9 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Axios from "axios";
 
-import "./style.css";
+import "./style.scss";
 
 const Navbar = () => {
     const [email, setEmail] = useState("");

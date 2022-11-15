@@ -107,7 +107,7 @@ input::-moz-placeholder {
 
 	.banner img {
 		width: 60vh;
-		height: 50vh;
+		height: 45vh;
 		display: flex;
 		align-items: center;
 	}
@@ -122,6 +122,7 @@ input::-moz-placeholder {
 	}
 
 	.signup .form {
+		margin-left: 5rem;
 		padding: 1rem;
 		width: 36vh;
 		height: 100%;

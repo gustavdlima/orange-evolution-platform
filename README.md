@@ -18,15 +18,15 @@ $ git clone https://github.com/gustavdlima/orange-evolution-platform
 
 Dentro do repositório (client e server), instale as dependências necessárias:
 
-$ npm install
+    $ npm install
 
 Para ligar os servidores, basta usar os comandos:
 
 Dentro da ./server
-$ npm start
+    $ npm start
 
 Dentro do ./client/orange-platform
-$ npm run dev
+    $ npm run dev
 
 ## Usando a plataforma
 

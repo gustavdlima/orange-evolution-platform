@@ -1,0 +1,190 @@
+.login {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 2rem;
+	background: black;
+}
+
+.login .form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgb(31, 31, 31);
+}
+
+.login h1 {
+	color: #c5c5c5;
+}
+
+.login .field {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 0.5rem;
+}
+
+.login .field label {
+	color: #ffffff;
+}
+
+.login .field input {
+	padding: 0.8rem;
+	border: 1px solid #c5c5c5;
+}
+
+.login .actions {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login .actions button {
+	background-color:#ff5a23;
+	color: #ffffff;
+	border: none;
+}
+
+.login .actions button:hover {
+	background-color:#ffffff;
+	color: #ff5a23;
+	transition: 0.7s;
+}
+
+input::-moz-placeholder {
+	color:rgb(117, 117, 117);
+	font-size: 1rem;
+	font-style: bold;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 2048px) {
+	.login {
+		width: 100%;
+		height: 100%;
+	}
+
+	.login .form {
+		width: 33vh;
+		height: 38vh;
+	}
+
+	.login .form .field {
+		width: 40vh;
+	}
+
+	.login .form label {
+		margin: 1rem;
+	}
+
+	.login .form .email-input {
+		width: 13rem;
+		height: 2rem;
+		border: 1px solid red;
+	}
+
+	.login .form .password-input {
+		width: 13rem;
+		height: 2rem;
+		margin-right: 6px;
+		border: 1px solid red;
+	}
+
+	.login .actions button {
+		margin-top: 3rem;
+		width: 7rem;
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (min-width: 561px) and (max-width: 1023px) {
+	.login {
+		width: 100%;
+		height: 100%;
+	}
+
+	.login .form {
+		width: 33vh;
+		height: 38vh;
+	}
+
+	.login .form .field {
+		width: 40vh;
+	}
+
+	.login .form label {
+		margin: 1rem;
+	}
+
+	.login .form .email-input {
+		width: 13rem;
+		height: 2rem;
+		border: 1px solid red;
+	}
+
+	.login .form .password-input {
+		width: 13rem;
+		height: 2rem;
+		margin-right: 5px;
+		border: 1px solid red;
+	}
+
+	.login .actions button {
+		margin-top: 3rem;
+		width: 7rem;
+		font-size: 1.2rem;
+	}
+
+}
+
+@media only screen and (max-width:560px) {
+	.login {
+		width: 100%;
+		height: 100%;
+	}
+
+	.login .form {
+		width: 100%;
+		height: 50vh;
+	}
+
+	.login .form .field {
+		width: 40vh;
+	}
+
+	.login .form label {
+		margin: 1rem;
+	}
+
+	.login .form .email-input {
+		width: 13rem;
+		height: 2rem;
+		border: 1px solid red;
+	}
+
+	.login .form .password-input {
+		width: 13rem;
+		height: 2rem;
+		margin-right: 5px;
+		border: 1px solid red;
+	}
+
+	.login .actions button {
+		margin-top: 3rem;
+		width: 7rem;
+		font-size: 1.2rem;
+	}
+
+}
+
+
+
+// @media only screen and (min-width: 1024px) and (max-width: 2048px) {
+// }
+
+// @media only screen and (min-width: 561px) and (max-width: 1023px) {
+// }
+
+// @media only screen and (max-width:560px) {
+// }

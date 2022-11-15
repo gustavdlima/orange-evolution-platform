@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import "./style.css";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom"
+import "./style.scss";
 
 
 const Login = () => {
@@ -55,12 +55,13 @@ const Login = () => {
 			</div>;
 	}
     return (
-        <div id="login">
+        <div className="login">
             <form className="form" onSubmit={handleSubmit}>
                 <img src="./src/assets/logo-branca.png" alt="" />
                 <div className="field">
                     <label htmlFor="email">Email</label>
                     <input
+                    className="email-input"
                         type="email"
                         name="email"
                         id="email"
@@ -72,6 +73,7 @@ const Login = () => {
                 <div className="field">
                     <label htmlFor="password">Senha</label>
                     <input
+                        className="password-input"
                         type="password"
                         name="password"
                         id="password"

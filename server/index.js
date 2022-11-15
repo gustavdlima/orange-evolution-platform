@@ -35,17 +35,15 @@ app.post("/login", (req, res) => {
       console.log(result);
       console.log(result.length);
       if (result.length > 0) {
-        res.send({ msg: "Usuário logado com sucesso" });
+        res.status(200).send({ msg: "Usuário logado com sucesso" });
       } else {
         res.send({ msg: "Conta não encontrada" });
       }
     }
   );
-  // console.log(req.body);
-
 });
 
-app.post("/", (req, res) => {
+app.post("/cadastro", (req, res) => {
   const name = req.body.name;
   const email = req.body.email;
   const password = req.body.password;
@@ -55,7 +53,7 @@ app.post("/", (req, res) => {
     [name, email, password],
     (err, result) => {
       if (err) res.send(err);
-      res.send({ msg: "Cadastrado com sucesso" });
+      res.status(200).send({ msg: "Cadastrado com sucesso" });
     }
   );
   console.log(req.body);

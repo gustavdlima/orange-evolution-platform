@@ -1,4 +1,4 @@
-#Orange Juice
+# Orange Juice
 
 A Orange Juice é uma plataforma que oferece trilhas usando conteúdo de terceiros e próprio para quem tiver interesse em crescer na tecnologia!
 

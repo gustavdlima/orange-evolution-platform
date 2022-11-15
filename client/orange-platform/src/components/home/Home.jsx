@@ -3,9 +3,11 @@ import './style.css'
 import Navbar from '../navbar/Navbar'
 import Trilhas from '../trilhas/Trilhas'
 import Subtopicos from '../subtopicos/Subtopic'
+import Login from '../loginPage/Login'
 
 const Home = () => {
-	return (
+
+		return (
 		<div className="home">
 			<Navbar />
 
@@ -14,6 +16,7 @@ const Home = () => {
 
 		</div>
 	  )
+
 }
 
 export default Home

@@ -6,7 +6,6 @@ import Navbar from '../../navbar/Navbar'
 
 const Ux = ({ area }) => {
 
-
   return (
 	<div className="uxContainer">
         <Navbar />

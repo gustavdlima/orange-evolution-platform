@@ -4,6 +4,7 @@ import Modal from "react-modal"
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 import "./style.scss";
 Modal.setAppElement(document.getElementById('root'));
+
 var id = toString('');
 
 const Subtopic = ({ title, data }) => {

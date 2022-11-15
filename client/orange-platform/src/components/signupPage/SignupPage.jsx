@@ -1,8 +1,9 @@
 import React from "react";
-import { useState } from "react"
+import { useState } from "react";
 import "./style.css";
-import	Axios from "axios"
-import { useNavigate } from "react-router-dom"
+import Axios from "axios";
+import { useNavigate } from "react-router-dom";
+var cadastradoSucesso = 0;
 
 const SignupPage = () => {
     const [name, setName] = useState("");
@@ -11,21 +12,24 @@ const SignupPage = () => {
 
     const handleSubmit = (values) => {
         values.preventDefault();
-        Axios.post("http://localhost:3000/cadastro", {
-            name: name,
-            email: email,
-            password: password,
-        }).then((response) => {
-            console.log(response);
-        });
+        if ((name.length > 0) && (email.length > 0) && (password).length > 0) {
+            Axios.post("http://localhost:3000/cadastro", {
+                name: name,
+                email: email,
+                password: password,
+            }).then((response) => {
+                routeChange()
+                console.log(response);
+            });
+        }
         console.log(name, email, password);
     };
 
     const navigate = useNavigate();
     const routeChange = () => {
-        let path = '/login'
+        let path = "/login";
         navigate(path);
-    }
+    };
 
     return (
         <div id="signup">
@@ -61,14 +65,24 @@ const SignupPage = () => {
                         id="password"
                         placeholder="Ex: **********"
                         value={password}
-                        onChange={(value) => setPassword(value.target.value)}
+                        onChange={
+
+                            (value) => setPassword(value.target.value)}
                     />
                 </div>
                 <div className="actions">
-                    <button type="submit" className="button" onClick={routeChange}>
+                    <button
+                        type="submit"
+                        className="button"
+                        onClick={() => {
+                            routeChange()
+                        }}>
                         Login
                     </button>
-                    <button type="submit" className="button">
+                    <button
+                        type="submit"
+                        className="button"
+                    >
                         Cadastrar
                     </button>
                 </div>

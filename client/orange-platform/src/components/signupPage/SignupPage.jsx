@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "./style.css";
+import "./style.scss";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
 var cadastradoSucesso = 0;
@@ -32,7 +32,8 @@ const SignupPage = () => {
     };
 
     return (
-        <div id="signup">
+        <div className="signup">
+            <div className="form-box">
             <form className="form" onSubmit={handleSubmit}>
                 <img src="./src/assets/logo-branca.png" alt="" />
                 <div className="field">
@@ -87,11 +88,14 @@ const SignupPage = () => {
                     </button>
                 </div>
             </form>
+            </div>
+            <div className="banner">
             <img
                 className="form-side-img"
                 src="./src/assets/final-img-carousel.png"
                 alt=""
             />
+            </div>
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './styles/global.scss';
+import './main.css';
 import RoutesApp from './routes/RoutesApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

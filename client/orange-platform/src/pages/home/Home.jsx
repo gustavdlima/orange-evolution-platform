@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
-import Navbar from '../navbar/Navbar'
-import Trilhas from '../trilhasCard/TrilhasCard'
+import Navbar from '../../components/navbar/Navbar'
+import Trilhas from '../../components/trilhasCard/TrilhasCard'
 import Login from '../loginPage/Login'
 
 const Home = () => {

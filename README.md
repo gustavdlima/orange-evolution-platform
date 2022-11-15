@@ -10,7 +10,7 @@ Essa plataforma foi desenvolvida para o Hackathon da FCamara usando as tecnologi
 - Vite;
 - React;
 
-##Local build
+## Ligando os servidores
 
 Para iniciar, clone o repositório com:
 
@@ -27,6 +27,19 @@ $ npm start
 
 Dentro do ./client/orange-platform
 $ npm run dev
+
+## Usando a plataforma
+
+Para acessar a plataforma, use http://localhost:5173/.
+
+### Rotas permitidas:
+- /
+- /cadastro
+- /login
+- /home
+- /fullstack  (privado para usuários)
+- /ux (privado para usuários)
+- /qa (privado para usuários)
 
 ## Contribuição
 Contribuição são bem vindas!
